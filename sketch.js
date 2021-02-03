@@ -71,5 +71,5 @@ function draw() {
 }
 
 function mousePressed(){
-	print("mousePressed X: " + mouseX + "Y: " + mouseY;
+ 	print("mousePressed X:  " + mouseX + "  Y:  " + mouseY);
 }
