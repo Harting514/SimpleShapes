@@ -1,13 +1,26 @@
 // Setup code goes here
 function setup() {
   createCanvas(1200, 800);
-  print("Red Box-meow");
+  print("Red Bottle-Meow");
  }
 
 
 // Draw code goes here
 function draw() {
   background(59,200,200);
+
+  // deform pointing
+  let t = map(mouseX, 0, width, -5, 5);
+  curveTightness(t);
+  beginShape();
+  curveVertex(10, 364);
+  curveVertex(10, 364);
+  curveVertex(83, 362);
+  curveVertex(83, 399);
+  curveVertex(25, 395);
+  curveVertex(25, 395);
+  endShape();
+
 
 
   //tail
@@ -26,7 +39,13 @@ function draw() {
   stroke('purple');
   strokeWeight(3);
   rect(215,390,120,180,30);
-
+  circle(245, 430, 20);
+  circle(309, 454, 30);
+  circle(248, 507, 20);
+  circle(280, 523, 10);
+  circle(307, 538, 10);
+  circle(281, 485, 10);
+  circle(302, 415, 15);
 
 
   //ear 1
@@ -73,3 +92,4 @@ function draw() {
 function mousePressed(){
  	print("mousePressed X:  " + mouseX + "  Y:  " + mouseY);
 }
+
